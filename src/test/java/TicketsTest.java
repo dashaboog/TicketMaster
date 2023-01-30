@@ -63,8 +63,8 @@ public class TicketsTest {
     @Test
     public void shouldFindOne() {
 
-        Tickets[] expected = {ticket2};
-        Tickets[] actual = manager.searchBy("LAX", "MSC");
+        Tickets[] expected = {ticket3};
+        Tickets[] actual = manager.searchBy("LND", "TKY");
 
         Assertions.assertArrayEquals(expected, actual);
     }
